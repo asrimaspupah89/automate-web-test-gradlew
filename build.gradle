@@ -50,7 +50,7 @@ tasks.register('webTest') {
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
             args = [
                     '--plugin', 'pretty',
-                    '--plugin', 'html:reports/cucumber-web-report.html',
+                    '--plugin', 'html:reports/index.html',
                     '--glue', 'stepdefinitions',
                     '--tags', "@web",
                     'src/test/resources/features']
