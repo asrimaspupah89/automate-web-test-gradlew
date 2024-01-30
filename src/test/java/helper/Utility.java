@@ -19,7 +19,7 @@ public class Utility {
     public static void startDriver() {
         //Initiating your chromedriver
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless"); // dikomentar agar UI Chrome muncul
+        options.addArguments("--headless"); // agar UI Chrome tidak muncul
         options.addArguments("--no-sandbox"); // chrome production vertion
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--remote-allow-origins=*"); // allowing to cors (lintas origin/domain), chrome dapat diremote via selenium
